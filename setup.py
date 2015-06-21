@@ -2,8 +2,9 @@ from distutils.core import setup
 from smart_getenv import __version__
 
 
+
 setup(
-    name='python-smart-getenv',
+    name='smart-getenv',
     version=__version__,
     author='Valentyn Barmashyn',
     author_email='valpreacher@gmail.com',
