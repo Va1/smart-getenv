@@ -12,13 +12,10 @@ setup(
     version=__version__,
     author='Valentyn Barmashyn',
     author_email='valpreacher@gmail.com',
-    url='https://github.com/Va1/python-smart-getenv',
+    url='https://github.com/Va1/smart-getenv',
     license='Apache License 2.0',
-    description=get_long_description(),
-    long_description='Since environment variables in os.environ are strings, '
-                     'it often appears inconvenient to store and retrieve other '
-                     'data types such as bool or list. The package provides a single function '
-                     'that wraps os.getenv and allows you to specify the desired variable type.',
+    description='Wrapper for os.getenv that achieves return values of a specified type',
+    long_description=get_long_description(),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
