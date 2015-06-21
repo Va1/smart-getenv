@@ -2,6 +2,10 @@ from distutils.core import setup
 from smart_getenv import __version__
 
 
+def get_long_description():
+    with open('README.md', 'r') as readme:
+        return readme.read()
+
 
 setup(
     name='smart-getenv',
@@ -10,15 +14,15 @@ setup(
     author_email='valpreacher@gmail.com',
     url='https://github.com/Va1/python-smart-getenv',
     license='Apache License 2.0',
-    description="Wrapper for os.getenv that achieves return values of a specified type ",
-    long_description="Since environment variables in os.environ are strings, "
-                     "it often appears inconvenient to store and retrieve other "
-                     "data types such as bool or list. The package provides a single function "
-                     "that wraps os.getenv and allows you to specify the desired variable type.",
+    description=get_long_description(),
+    long_description='Since environment variables in os.environ are strings, '
+                     'it often appears inconvenient to store and retrieve other '
+                     'data types such as bool or list. The package provides a single function '
+                     'that wraps os.getenv and allows you to specify the desired variable type.',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
-        'Intended Audience :: Developers',
+        'Intended Audience :: System Administrators',
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
@@ -30,6 +34,5 @@ setup(
         'Topic :: System',
         'Topic :: Utilities'
     ],
-    py_modules=['smart_getenv'],
-    test_suite='tests'
+    py_modules=['smart_getenv']
 )

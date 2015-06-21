@@ -4,6 +4,8 @@ Since environment variables in os.environ are strings, it often appears inconven
 data types such as bool or list. The package provides a single function that wraps os.getenv and allows
 you to specify the desired variable type.
 
+Tested and supported types: str, int, float, list. tuple, dict.
+
 
 ## Usage
 
@@ -27,6 +29,8 @@ Get them:
 True
 >>> getenv('LIST', type=list)
 ['a', 'b', 'c']
+>>> getenv('LIST', type=tuple)
+('a', 'b', 'c')
 >>> getenv('TRICKY_LIST', type=list, separator=':')
 ['d', 'e', 'f']
 >>> getenv('DICT', type=dict)
