@@ -3,8 +3,8 @@ from smart_getenv import __version__
 
 
 def get_long_description():
-    with open('README.rst', 'r') as readme:
-        return readme.read()
+    with open('README.rst', 'r') as file:
+        return file.read()
 
 
 setup(

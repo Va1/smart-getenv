@@ -7,6 +7,7 @@ you to specify the desired variable type.
 
 Tested and supported types: str, int, float, list. tuple, dict.
 
+`PyPi page`_
 
 Usage
 -----
@@ -47,3 +48,6 @@ Get them:
     {'foo': 'bar'}
     >>> getenv('LOST', default='default value anyone?')
     'default value anyone?'
+
+
+.. _PyPi page: https://pypi.python.org/pypi/smart-getenv
