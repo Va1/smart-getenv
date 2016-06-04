@@ -1,6 +1,8 @@
-__version__ = '1.0.5'
-
 import os
+from ast import literal_eval
+
+
+__version__ = '1.1.0'
 
 
 def getenv(name, **kwargs):
@@ -31,6 +33,6 @@ def getenv(name, **kwargs):
         return desired_type(value)
 
     if desired_type is dict:
-        return dict(eval(value))
+        return dict(literal_eval(value))
 
     return desired_type(value)

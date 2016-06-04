@@ -1,4 +1,5 @@
 .idea/
+.venv/
 *.swp
 *.pyc
 __pycache__/

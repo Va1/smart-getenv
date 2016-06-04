@@ -49,5 +49,10 @@ Get them:
     >>> getenv('LOST', default='default value anyone?')
     'default value anyone?'
 
+Run tests:
+
+.. code:: bash
+
+    $ python tests.py
 
 .. _PyPi page: https://pypi.python.org/pypi/smart-getenv

@@ -168,3 +168,7 @@ class GetenvTests(unittest.TestCase):
             pass
         except SyntaxError:
             pass
+
+
+if __name__ == '__main__':
+    unittest.main()
